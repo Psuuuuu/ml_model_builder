@@ -36,9 +36,7 @@ session = {
     "missing_strategy": "drop",      # Stored missing strategy
     "transformation_text": ""        # Stored transformation options (comma-separated)
 }
-# ---------------------------
-# Dahsboard 
-# ---------------------------
+
 
 # ---------------------------
 # Step 1: File Upload Handler
@@ -64,17 +62,6 @@ def handle_upload(file):
     except Exception as e:
         return f"Error: {e}", None, gr.update(choices=[]), gr.update(choices=[])
 
-# ---------------------------
-# Step 2: Global Missing Value Strategy
-# ---------------------------
-# def save_missing_strategy(missing_strategy):
-#     raw_df = session.get("raw_df")
-#     if raw_df is None:
-#         return "No data available", None
-#     processed_df = preprocess_data(raw_df.copy(), target_col="", missing_strategy=missing_strategy, transformation_map={})
-#     session["df"] = processed_df
-#     session["missing_strategy"] = missing_strategy  # Store in session
-#     return f"Missing value strategy '{missing_strategy}' applied", preview_dataframe(processed_df)
 
 def save_missing_strategy(missing_strategy):
     raw_df = session.get("raw_df")
@@ -301,16 +288,6 @@ def run_hyperparameter_tuning(experiment_title, selected_models):
     return "\n\n".join(status_texts), "Tuning complete!"
 
 
-
-
-###--------------------dahsboard 
-
-
-###--------------------dahsboard 
-
-
-
-
 # ---------------------------
 # Gradio Interface Layout
 # ---------------------------
@@ -358,7 +335,7 @@ with gr.Blocks() as demo:
     
     with gr.Tab("Model Training"):
         gr.Markdown("### Model Training and Experiment Logging")
-        # Global Experiment Title Input
+
         experiment_title_input = gr.Textbox(label="Experiment Title", placeholder="Enter a title for this experiment", lines=1)
         
         gr.Markdown("### Model Selection and Hyperparameter Tuning")
