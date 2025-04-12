@@ -5,6 +5,8 @@ Train and test any classification dataset with any listed models
 
 **🔗 Video Presentation:** [YouTube](https://www.youtube.com/watch?v=EwHgsqMNW3U)
 
+**🔗 Download Dataset:** [Sample Dataset](https://github.com/Psuuuuu/ml_model_builder/tree/main/data)
+
 ---
 
 ## 📌 Project Overview
