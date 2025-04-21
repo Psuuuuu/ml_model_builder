@@ -3,6 +3,8 @@ Train and test any classification dataset with any listed models
 
 **🔗 Deployed App:** [Launch on Hugging Face Spaces](https://huggingface.co/spaces/Dhananjaykhengare/ml_model_builder)
 
+**🔗 Deployed App (Backup):** [Launch on Hugging Face Spaces](https://huggingface.co/spaces/Dhananjaykhengare/ml_model_builder_alternate)
+
 **🔗 Video Presentation:** [YouTube](https://www.youtube.com/watch?v=EwHgsqMNW3U)
 
 **🔗 Download Dataset:** [Sample Dataset](https://github.com/Psuuuuu/ml_model_builder/tree/main/data)
